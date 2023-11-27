@@ -1,7 +1,20 @@
+using myfinance_web_netcore.Domain;
+using myfinance_web_netcore.Infrastructure;
+using myfinance_web_netcore.Mappers;
+using myfinance_web_netcore.Services;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<MyFinanceDbContext>();
+
+//Services
+builder.Services.AddTransient<IPlanoContaService, PlanoContaService>();
+builder.Services.AddTransient<ITransacaoService, TransacaoService>();
+// builder.Services.AddAutoMapper(AssemblyUtil.GetCurrentAssemblies());
+builder.Services.AddAutoMapper(typeof(PlanoContaMap));
+builder.Services.AddAutoMapper(typeof(TransacaoMap));
 
 var app = builder.Build();
 
