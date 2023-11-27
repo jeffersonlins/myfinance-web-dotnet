@@ -4,6 +4,8 @@ Feito por: Jefferson Azevedo Lins
 
 ## Arquitetura
 
+![MyFinanceWeb](https://github.com/jeffersonlins/myfinance-web-dotnet/assets/89261350/8056fd91-ae22-46d4-9c08-86b91d41247a)
+
 ## Tecnologias
 
 - .NET 7.0 
