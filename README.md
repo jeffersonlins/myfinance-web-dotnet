@@ -15,7 +15,7 @@ Feito por: Jefferson Azevedo Lins
 
 ## Configuração de Startup do Projeto
 
-- Crie o banco de dados utilizando o script na pasta do projeto;
+- Crie o banco de dados utilizando o script na pasta do projeto (Script.sql);
 - Baixe o código fonte aqui no github;
 - Altere o arquivo de configuração appsettings.json, informando o nome do servidor que está o seu banco de dados; Por padrão está sendo utilizada a connection string a seguir: 
 
